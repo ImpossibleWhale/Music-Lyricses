@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Müzik Sözleri - Ana Sayfa</title>
+  <style>
+   
+    body {
+      background-color: #8f8fac;
+      color: #f3f4f6;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .site-header {
+      text-align: center;
+      padding: 40px 0;
+      font-family: inherit;
+      color: #85acca;
+    }
+
+    .site-title {
+      font-size: 36px;
+      font-weight: 800;;
+      margin: 0 0 20px 0;
+      letter-spacing: 2px;
+    }
+
+    
+    .nav-menu {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .nav-link {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      background-color: #4e7098;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+
+    .nav-link:hover {
+      background-color: #ffffff;
+    }
+
+   
+    .section-title {
+      font-size: 22px;
+      color: #becbdd;
+      border-left: 4px solid #435a72;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+
+    .song-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+  
+    .song-card {
+      background-color: #38647f;
+      border: 1px solid #314e66;
+      border-radius: 10px;
+      padding: 20px;
+      text-decoration: none;
+      color: #becbdd;
+      display: block;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .song-card:hover {
+      transform: translateY(-5px); 
+      border-color: #f1e0e0;
+    }
+
+    .card-song-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .card-artist {
+      font-size: 14px;
+      color: #a0aec0;
+    }
+
+    .card-genre {
+      display: inline-block;
+      font-size: 11px;
+      background-color: #445265;
+      color: #ffffff;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    
+    <header class="site-header">
+      <h1 class="site-title"  font-family>MEGALODONIAC MUSIC</h1>
+      
+      
+     
+      <nav class="nav-menu">
+        <a href="#" class="nav-link">Ana Sayfa</a>
+        <a href="#" class="nav-link">Pop</a>
+        <a href="#" class="nav-link">Rock</a>
+        <a href="#" class="nav-link">Rap</a>
+        <a href="#" class="nav-link">Alternatif</a>
+      </nav>
+    </header>
+
+    <main>
+      
+      <h2 class="section-title">Son Eklenen Şarkı Sözleri</h2>
+      
+      <div class="song-grid">
+        
+       
+        <a href="https://suno.com/song/80471067-42d0-4a60-b4bc-90a7a91e7f1c" class="song-card">
+          <div class="card-song-name">2 yıldızın ölümü</div>
+          <div class="card-artist">wegaloniece</div>
+          <span class="card-genre">Pop</span>
+        </a>
+
+       
+        <a href="https://suno.com/song/284e418d-3ba0-477f-b3d8-1a27e35ad219" class="song-card">
+          <div class="card-song-name">Ay Işığı </div>
+          <div class="card-artist">wegaloniece</div>
+          <span class="card-genre">Pop</span>
+        </a>
+
+        
+        <a href="sarki3.html" class="song-card">
+          <div class="card-song-name">Şarkı Adı 3</div>
+          <div class="card-artist">Sanatçı İsmi</div>
+          <span class="card-genre">Pop</span>
+        </a>
+
+      </div>
+    </main>
+
+  </div>
+<div class="search-container">
+  <form action="/arama" method="GET" class="search-form">
+    <input 
+      type="text" 
+      name="q" 
+      class="search-input" 
+      placeholder="Şarkı adı veya sanatçı ara..." 
+      required
+    >
+    <button type="submit" class="search-button">Ara</button>
+  </form>
+</div>
+
+<a href="https://suno.com/song/80471067-42d0-4a60-b4bc-90a7a91e7f1c" class="song-card">
+  <div class="card-song-name">2 Yıldızın Ölümü</div>
+</a>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+<link rel="stylesheet" href="../css/style.css">
+<nav class="nav-menu">
+  <a href="../index.html" class="nav-link">Ana Sayfa</a>
+</nav>
+<div class="theme-switch-wrapper">
+  <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+  <label for="theme-toggle" class="theme-label">
+    <span class="theme-ball"></span>
+  </label>
+  <span class="theme-text">Gündüz Modu</span>
+</div>
+
+<div class="audio-player-container">
+  <audio controls class="custom-audio">
+    <source href="/Users/ceylin/Music/Music/Media.localized/Music/cherrinna/Unknown Album/2 yıldızın ölümü.mp3" type="audio/mpeg">
+    Tarayıcınız bu ses oynatıcısını desteklemiyor.
+  </audio>
+</div>
+<style>
+  
+.audio-player-container {
+  text-align: center;
+  margin: 20px auto 40px auto;
+  max-width: 400px;
+  background-color: #16192b;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #222533;
+}
+
+
+.custom-audio {
+  width: 100%;
+  outline: none;
+}
+
+
+.custom-audio::-webkit-media-controls-panel {
+  background-color: #16192b;
+}
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.theme-checkbox {
+  display: none;
+}
+
+
+.theme-label {
+  width: 50px;
+  height: 26px;
+  background-color: #16192b;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #222533;
+  transition: background-color 0.3s;
+}
+
+
+.theme-ball {
+  width: 20px;
+  height: 20px;
+  background-color: #ff3b6c;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.theme-text {
+  font-size: 13px;
+  color: #a0aec0;
+}
+
+ 
+.audio-player-container {
+  text-align: center;
+  margin: 20px auto 40px auto;
+  max-width: 400px;
+  background-color: #295476;
+  padding: 15px;
+  border-radius: 30px;
+  border: 1px solid #295476;
+}
+
+
+.custom-audio {
+  width: 100%;
+  outline: none;
+}
+
+
+.custom-audio::-webkit-media-controls-panel {
+  background-color: #295476;
+}
+
+
+.theme-checkbox:checked + .theme-label .theme-ball {
+  transform: translateX(24px);
+  background-color: #253f45;
+}
+
+
+.theme-checkbox:checked + .theme-label {
+  background-color: #e2e8f0;
+}
+
+
+body:has(.theme-checkbox:checked) {
+  background-color: #f7fafc; 
+  color: #1a202c; 
+}
+
+body:has(.theme-checkbox:checked) .nav-link {
+  background-color: #edf2f7;
+  color: #2d3748;
+}
+
+body:has(.theme-checkbox:checked) .song-card {
+  background-color: #ffffff;
+  border-color: #486c9b;
+  color: #1a202c;
+}
+
+body:has(.theme-checkbox:checked) .card-artist {
+  color: #718096;
+}
+
+body:has(.theme-checkbox:checked) .search-form {
+  background-color: #ffffff;
+  border-color: #cbd5e0;
+}
+
+body:has(.theme-checkbox:checked) .search-input {
+  color: #1a202c;
+}
+.search-container {
+  max-width: 500px;
+  margin: 0 auto 30px auto; 
+}
+
+.search-form {
+  display: flex;
+  background-color: #587798;
+  border: 2px solid #628ea5;
+  border-radius: 30px;
+  overflow: hidden; 
+  transition: border-color 0.2s;
+}
+
+
+.search-form:focus-within {
+  border-color: #698fb5;
+}
+
+
+.search-input {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  color: #f8e1e1;
+  outline: none; 
+}
+
+
+.search-input::placeholder {
+  color: #718096;
+}
+
+
+.search-button {
+  background-color: #345764;
+  border: none;
+  color: #ddc7c7;
+  padding: 0 25px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #84a5b4;
+}
+body {
+    background: linear-gradient(135deg, #33597e, #0f1927);
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+
+@media (max-width: 768px) {
+  
+  .container {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+ 
+  .site-title {
+    font-size: 28px;
+  }
+
+  
+  .nav-menu {
+    flex-wrap: wrap; 
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  
+  .song-grid {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+  
+ 
+  .search-container {
+    width: 100%;
+  }
+  
+}
+
+
+</style>
+</body>
+</html>
