@@ -83,6 +83,18 @@
       transition: transform 0.2s, border-color 0.2s;
     }
 
+    .song-lyrics {
+        background-color: #38647f;
+        border: 1px solid #314e66;
+        border-radius: 10px;
+        padding: 10px;
+        text-decoration: solid;
+        color: #becbdd;
+        display: block;
+        transition: transform 0.2s , border-color 0.2s;
+    }
+
+
     .song-card:hover {
       transform: translateY(-5px); 
       border-color: #f1e0e0;
@@ -140,7 +152,8 @@
         <a href="https://suno.com/song/80471067-42d0-4a60-b4bc-90a7a91e7f1c" class="song-card">
           <div class="card-song-name">2 yıldızın ölümü</div>
           <div class="card-artist">wegaloniece</div>
-          <span class="card-genre">Pop</span>
+          <span class="card-genre">Pop</span> 
+          
         </a>
 
        
@@ -174,16 +187,17 @@
   </form>
 </div>
 
-<a href="https://suno.com/song/80471067-42d0-4a60-b4bc-90a7a91e7f1c" class="song-card">
+<a href="https://suno.com/song/80471067-42d0-4a60-b4bc-90a7a91e7f1c" class="song-card" >
   <div class="card-song-name">2 Yıldızın Ölümü</div>
 </a>
-
+<a href="https://impossiblewhale.github.io/2yildizinolumulyrics/" class="song-lyrics">
+    <div class="card-song-lyrics"> > 2 Yıldızın Ölümü Sözleri</div>
+</a>
 <link rel="stylesheet" href="css/style.css">
 
 
 <link rel="stylesheet" href="../css/style.css">
 <nav class="nav-menu">
-  <a href="../index.html" class="nav-link">Ana Sayfa</a>
 </nav>
 <div class="theme-switch-wrapper">
   <input type="checkbox" id="theme-toggle" class="theme-checkbox">
@@ -192,10 +206,11 @@
   </label>
   <span class="theme-text">Gündüz Modu</span>
 </div>
+ 
 
 <div class="audio-player-container">
   <audio controls class="custom-audio">
-    <source href="/Users/ceylin/Music/Music/Media.localized/Music/cherrinna/Unknown Album/2 yıldızın ölümü.mp3" type="audio/mpeg">
+    <source href="/Users/ceylin/Music/Music/Media.localized/Music/cherrinna/Unknown Album/2 yıldızın ölümü.mp3" type="audio/mpeg">
     Tarayıcınız bu ses oynatıcısını desteklemiyor.
   </audio>
 </div>
@@ -421,7 +436,21 @@ body {
   }
   
 }
+ .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #295479; 
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
 
+.back-button:hover {
+    background-color: #3a81c4; 
+}
 
 </style>
 </body>
